@@ -1,0 +1,27 @@
+/* Dropdown.css */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%; /* Positionner en dessous du bouton */
+    left: 0;
+    background-color: white; /* Couleur de fond de la bulle */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1; /* Assurez-vous que la bulle flotte au-dessus d'autres éléments */
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.dropdown-content p {
+    margin: 0;
+    padding: 8px 12px;
+    cursor: default;
+}
+
+.dropdown-content p:hover {
+    background-color: #f1f1f1; /* Couleur de fond au survol */
+}

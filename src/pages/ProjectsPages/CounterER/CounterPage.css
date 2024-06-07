@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "EldenRingFont";
+    src: url("../../../assets/font/MantiniaRegular.otf");
+  }
+
+.counter {
+    font-family: "EldenRingFont";
+    font-size: 1vw;
+    white-space: nowrap; /* Empêcher le saut à la ligne */
+}
+  
+
+
+.mainText {
+    font-size: clamp(10px,10vw,100px);
+    margin: 0;
+}
+
+.mainText::first-letter{
+    font-size: 125%;
+    vertical-align: -5%;
+}
+
+.mainText::after{
+    content: attr(lastLetter) ;
+    font-size: 125%;
+    vertical-align: -5%;
+}
+
+/* Style pour l'effet de texture de fissure */
+.TextureGold{
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/54283b95-9dd2-4197-8c4f-5c7cc84d57b6/ddkgzbh-1ac7f3dc-8525-40e9-bc0b-21419ddb41d6.jpg/v1/fill/w_1024,h_654,q_75,strp/high_quality_gold_texture_background_by_anulubi_ddkgzbh-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjU0IiwicGF0aCI6IlwvZlwvNTQyODNiOTUtOWRkMi00MTk3LThjNGYtNWM3Y2M4NGQ1N2I2XC9kZGtnemJoLTFhYzdmM2RjLTg1MjUtNDBlOS1iYzBiLTIxNDE5ZGRiNDFkNi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.T7ULPfWmWQRlzz8lrr02ZeCbzDoy5WaLZm8MqDJzhGI');
+    background-size: cover;
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -moz-background-clip:text;
+   background-clip:text; 
+   
+}
+  
+.SilverFilter{
+    filter: grayscale(100%);
+    background-size: calc(100% - 70%) auto; 
+    font-size: clamp(5px, 5vw, 50px);
+}
+
+
+  /* Style pour le texte secondaire */
+.subText {
+    display: inline-block; /* Afficher en ligne avec la largeur minimale */
+    font-size: 50%; /* Taille de police */
+    line-height: 0.65; /* Supprimer l'espacement vertical entre les lignes */
+    -webkit-text-stroke: 0.5px #bebebe;
+    vertical-align: -10%;
+    margin: 0;
+  
+}
+  
+.subTextLine {
+    display: block; /* Afficher sur une nouvelle ligne */
+    
+}
+
+
+/* Style pour l'arrière-plan */
+.backgroundImg {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1; /* Derrière le contenu */
+    animation: fadeBackground 25s infinite alternate; /* Animation en fondu */
+}
+  
+.backgroundImg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Assombrissement de l'image de fond */
+}
+  
+  /* Animation en fondu */
+@keyframes fadeBackground {
+    0% { background-image: url('https://miro.medium.com/v2/resize:fit:4800/format:webp/0*rw6tgad19L93TwK6.jpg'); }
+    25% { background-image: url('https://miro.medium.com/v2/resize:fit:4800/format:webp/0*sWRBpCmwqGJkWIid.jpg') ; }
+    50% { background-image: url('https://miro.medium.com/v2/resize:fit:4800/format:webp/0*Q4qFzvdrFeUB86fT.jpg'); }
+    75% { background-image: url('https://miro.medium.com/v2/resize:fit:4800/format:webp/0*Q8MJADlpUNX9Vt5U.jpg'); }
+    100% { background-image: url('https://miro.medium.com/v2/resize:fit:4800/format:webp/0*vzLKbSlTodANG9ZD.jpg'); }
+}

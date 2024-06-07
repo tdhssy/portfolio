@@ -1,0 +1,27 @@
+
+
+
+.navLetter {
+    display: flex;
+    flex-direction: column; /* Change la direction de la flexbox pour disposer les éléments verticalement */
+    margin-top: 50px; /* Espacement supplémentaire en haut de chaque élément */
+
+}
+
+.navLink {
+    margin-bottom: 10px; /* Espace entre les éléments */
+}
+
+
+.navLink {
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  
+.navLink.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #ffffff; 
+  }
