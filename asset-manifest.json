@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.23574c01.css",
-    "main.js": "/portfolio/static/js/main.01eef209.js",
+    "main.js": "/portfolio/static/js/main.0d69f5e0.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/MantiniaRegular.otf": "/portfolio/static/media/MantiniaRegular.17509f704db56aefbca6.otf",
     "index.html": "/portfolio/index.html",
     "main.23574c01.css.map": "/portfolio/static/css/main.23574c01.css.map",
-    "main.01eef209.js.map": "/portfolio/static/js/main.01eef209.js.map",
+    "main.0d69f5e0.js.map": "/portfolio/static/js/main.0d69f5e0.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.23574c01.css",
-    "static/js/main.01eef209.js"
+    "static/js/main.0d69f5e0.js"
   ]
 }
