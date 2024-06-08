@@ -9,10 +9,12 @@
     transition: width 0.3s ease;
     overflow-x: hidden;
     z-index: 1;
+
 }
 
 .sidebar.open {
     width: 200px; /* Largeur de la barre latérale ouverte */
+    font-family: "Quicksand", sans-serif;
 }
 
 /* Sidebar.css */

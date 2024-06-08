@@ -9,8 +9,8 @@ export function ContentSidebar() {
 
     return (
             <nav className='navLetter'>
-                <NavLink to="portfolio/home" className="navLink">Home</NavLink>
-                <NavLink to="portfolio/Countdown" className="navLink">Countdown</NavLink>
+                <NavLink to="portfolio/home" className="navLinkText">Home</NavLink>
+                <NavLink to="portfolio/projects" className="navLinkText">projects</NavLink>
             </nav>
     );
 }

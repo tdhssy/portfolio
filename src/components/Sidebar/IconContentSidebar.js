@@ -10,7 +10,7 @@ export function IconContentSidebar() {
     return (
             <nav className="navIcon">
                 <NavLink to="portfolio/home" className="navLinkIcon"><FiHome/></NavLink>
-                <NavLink to="portfolio/Countdown" className="navLinkIcon"><FiFolder/></NavLink>
+                <NavLink to="portfolio/projects" className="navLinkIcon"><FiFolder/></NavLink>
             </nav>
     );
 }

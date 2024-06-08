@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./components/Sidebar/Sidebar";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export function Main() {
 
@@ -10,9 +10,6 @@ export function Main() {
         setSidebarWidth(width);
     };
 
-    useEffect(() => {
-        // Ce useEffect est déclenché chaque fois que la largeur de la barre latérale change
-    }, [sidebarWidth]);
 
     return (
         <>

@@ -1,5 +1,5 @@
-import { useRouteError,useNavigate  } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useNavigate  } from "react-router-dom";
+import { useEffect } from "react";
 
 export function ErrorPage() {
     const navigate = useNavigate();
