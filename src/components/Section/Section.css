@@ -1,19 +1,23 @@
 .section {
-    margin: 50px 70px;
-    padding: 20px;
+    margin: 50px 30px;
+    padding: 20px ;
     border: 2px solid #ddd;
     border-radius: 5px;
-    background-color: #09101A; /* Couleur de fond principale */
-}
+    background-color: #09101ab2; /* Couleur de fond principale */
+    min-width: 350px;
+
+}   
+
+
 
 .titleSection {
     text-align: center;
-    font-size: 1.5em;
+    font-size: clamp(13px,3vw,20px);;
     margin-bottom: 10px;
     color:#55E6A5;
 }
   
 .subtitleSection {
-    font-size: 1em;
+    font-size: clamp(8px,2vw,15px);
     color:rgb(247, 233, 196);
 }

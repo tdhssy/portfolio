@@ -1,10 +1,12 @@
 .vitrine {
+    margin: 0;
     position: relative;
     border: 2px solid #ddd;
     border-radius: 5px;
     background-color: #09101A; /* Couleur de fond principale */
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%;
+    transition: scale 0.3s ease-in-out;
 }
 
 
@@ -14,8 +16,12 @@
     object-fit: cover; 
     object-position: center;
     filter: brightness(0.5);
-    transition: filter 0.3s ease, opacity 0.3s ease;
+    transition: filter 0.3s ease-in-out;
     overflow: hidden;
+}
+
+.vitrine:hover {
+    scale: 1.1;
 }
 
 .vitrine:hover img {
@@ -36,12 +42,20 @@
     color: white;
     opacity:1;
     padding: 10px;
-    font-size:xx-large;
-
+    font-size:large;
+    transition: opacity 0.3s ease-in-out;
 
 }
   
 .VitrineSubtitle {
     font-size: 1em;
     color:rgb(247, 233, 196);
+}
+
+
+.navLinkVitrine{
+    position: relative;
+    width: 200px;
+    height: 200px;
+
 }

@@ -7,19 +7,23 @@
     margin-bottom: 10px; /* Espace entre les éléments */
     transition: background-color 0.3s ease,border-radius 0.3s ease;
     border-radius: 10px;
-    padding: 5px 10px;
+    padding: 5px 1px;
 }
 
 .navLinkText {
+
   color: #ffffff; 
   text-decoration: none;
   margin-bottom: 10px; /* Espace entre les éléments */
   transition: background-color 0.3s ease,border-radius 0.3s ease;
   border-radius: 10px;
-  padding: 5px 10px;
+  text-align: center;
+  --padding-horizontal: 0px; /* Définir la valeur du padding horizontal */
+  --padding-vertical: 0.8em; /* Définir la valeur du padding vertical */
+  padding: var(--padding-vertical) var(--padding-horizontal);
+  font-size: calc(var(--padding-vertical) * 1);
   color: #ffffff; 
   text-decoration: none;
-  padding: 0.5rem 1rem;
 }
 
   

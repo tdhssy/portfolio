@@ -1,16 +1,17 @@
 import './Vitrine.css';
-import CompteurProjectImage from '../../assets/pictures/CompteurProject.png';
+import { NavLink } from 'react-router-dom';
 
-
-const Vitrine = ()=> {
+const Vitrine = ({Img, Title, Link})=> {
  
 
     return (
-        <figure className="vitrine">
-            <img src={CompteurProjectImage}/>
-            <figcaption className="VitrineTitle">Compteur</figcaption>   
-        </figure>
-    );
+        <NavLink to={Link} className="navLinkVitrine">
+            <figure className="vitrine">
+                <img src={Img}/>
+                <figcaption className="VitrineTitle">{Title}</figcaption>   
+            </figure>
+        </NavLink>
+    );  
 
 };
 

@@ -22,7 +22,7 @@ export function Counter() {
                 </span>
                 
                 <div className='TextureGold SilverFilter'>
-                    <Countdown year={2024} month={5} day={21} hours={0} minutes={0} seconds={0}/>
+                    <Countdown year={2024} month={5} day={21} hours={12} minutes={0} seconds={0}/>
                 </div>
             </div>
             

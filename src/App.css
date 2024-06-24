@@ -11,7 +11,11 @@ body {
 /* Div pour contenir Outlet */
 .main-content {
   flex-grow: 1; /* Fait en sorte que ce div prenne tout l'espace disponible */
-  padding: 20px; /* Espacement intérieur */
+  height: 100%;
+  
+  margin: 0; /* Supprime les marges par défaut du corps */
+  padding: 0; /* Supprime les espacements par défaut du corps */
+  overflow-x: scroll;
 }
 
 .center {
@@ -23,15 +27,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #111;
-  z-index: -1;
-}
+
 
 .firstColor{
   color:white;
@@ -41,4 +37,22 @@ body {
 }
 .ThirdColor{
   color:#09101A;
+}
+
+/* Barre de défilement verticale */
+::-webkit-scrollbar {
+  width: 6px; /* Largeur de la barre de défilement */
+}
+
+::-webkit-scrollbar-track {
+ opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Couleur de la poignée de la barre de défilement */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #696969; /* Couleur de la poignée de la barre de défilement au survol */
 }
